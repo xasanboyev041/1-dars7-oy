@@ -9,10 +9,15 @@ const App = () => {
   return (
     <UserProvider>
       <Router>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/register">Register</Link>
+        <nav className="nav-bar">
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
+          <Link to="/register" className="nav-link">
+            Register
+          </Link>
         </nav>
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/register" element={<RegisterPage />} />
